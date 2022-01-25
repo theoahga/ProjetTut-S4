@@ -48,6 +48,7 @@ ul{
     background-color: #191919; /*12192C*/
     color: #FFFFFF;
     padding: 24px 32px;
+    position: fixed;
 }
 
 .lien{

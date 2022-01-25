@@ -16,17 +16,6 @@
                 <p class="page">Accueil</p>
             </a>
             <div href="#" class="lien conteneur">
-                <ion-icon name="tv-outline" class="icon"></ion-icon>
-                <p class="page">Films</p>
-
-                <ion-icon name="chevron-down-outline" class="conteneur_icon"></ion-icon>
-
-                <ul class="conteneur_menu">
-                    <a href="#" class="sous_lien">Recherche</a>
-                    <a href="#" class="sous_lien">Catégorie</a>
-                </ul>
-            </div>
-            <div href="#" class="lien conteneur">
                 <ion-icon name="book-outline" class="icon"></ion-icon>
                 <p class="page">Comics</p>
 
@@ -38,7 +27,7 @@
                 </ul>
             </div>
             <div href="#" class="lien conteneur">
-                <ion-icon name="book-outline" class="icon"></ion-icon>
+                <ion-icon name="tv-outline" class="icon"></ion-icon>
                 <p class="page">Series</p>
 
                 <ion-icon name="chevron-down-outline" class="conteneur_icon"></ion-icon>
@@ -49,7 +38,7 @@
                 </ul>
             </div>
             <div href="#" class="lien conteneur">
-                <ion-icon name="book-outline" class="icon"></ion-icon>
+                <ion-icon name="man-outline" class="icon"></ion-icon>
                 <p class="page">Personnages</p>
 
                 <ion-icon name="chevron-down-outline" class="conteneur_icon"></ion-icon>
@@ -60,7 +49,7 @@
                 </ul>
             </div>
             <div href="#" class="lien conteneur">
-                <ion-icon name="book-outline" class="icon"></ion-icon>
+                <ion-icon name="bookmarks-outline" class="icon"></ion-icon>
                 <p class="page">Collection</p>
 
                 <ion-icon name="chevron-down-outline" class="conteneur_icon"></ion-icon>

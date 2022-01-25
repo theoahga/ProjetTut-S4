@@ -13,7 +13,7 @@
             </div>
             <a href="#" class="lien">
                 <ion-icon name="home-outline" class="icon"></ion-icon>
-                <p class="page">Accueil</p>
+                <p class="page">Accueil zeubi</p>
             </a>
             <div href="#" class="lien conteneur">
                 <ion-icon name="tv-outline" class="icon"></ion-icon>

@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="menucss.css">
+        <link rel="stylesheet" href="../css/Style.css">
         <title>Menu</title>
     </head>
     <body>
@@ -17,6 +17,6 @@
             </div>
         </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
-    <script src="ApiComics.js"></script>  
+    <script src="../js/ApiComics.js"></script>  
     </body>
 </html>

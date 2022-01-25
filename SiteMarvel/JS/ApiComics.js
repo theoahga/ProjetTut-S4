@@ -1,10 +1,3 @@
-window.onload = () =>{
-    const bar = document.getElementById('searchbar');
-    bar.addEventListener('change', () => {
-        search(); 
-    });
-}
-
 function search(){
 
     const animename = document.getElementById('searchbar').value; 
@@ -17,10 +10,11 @@ function search(){
     var message = ts+pvtkey+pubkey;
     var hash = CryptoJS.MD5(message).toString();
 
-    fetch(`https://gateway.marvel.com/v1/public/comics?title=hulk&ts=${ts}&apikey=${pubkey}&hash=${hash}`)
+    fetch(`https://gateway.marvel.com/v1/public/comics?titleStartsWith=${animename}&ts=${ts}&apikey=${pubkey}&hash=${hash}`)
     .then(res => res.json())
     .then(UpdateDOM)
 }
+
 
 function UpdateDOM(data){
     console.log(data);
@@ -42,3 +36,8 @@ function UpdateDOM(data){
         `
     });
 }
+
+const bar = document.getElementById('searchbar');
+bar.addEventListener('change', () => {
+    search(); 
+});

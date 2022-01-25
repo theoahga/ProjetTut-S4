@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="menucss.css">
+        <link rel="stylesheet" href="../css/menucss.css">
         <title>Menu</title>
     </head>
     <body>
@@ -67,6 +67,6 @@
             </a>
         </div>
         <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
-        <script src="Menu.js"></script>
+        <script src="../js/Menu.js"></script>
     </body>
 </html>

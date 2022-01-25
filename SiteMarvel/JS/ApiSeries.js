@@ -10,7 +10,7 @@ function search(){
     var message = ts+pvtkey+pubkey;
     var hash = CryptoJS.MD5(message).toString();
 
-    fetch(`https://gateway.marvel.com/v1/public/comics?titleStartsWith=${animename}&ts=${ts}&apikey=${pubkey}&hash=${hash}`)
+    fetch(`https://gateway.marvel.com/v1/public/series?titleStartsWith=${animename}&ts=${ts}&apikey=${pubkey}&hash=${hash}`)
     .then(res => res.json())
     .then(UpdateDOM)
 }

@@ -7,16 +7,17 @@
         <title>Menu</title>
     </head>
     <body>
-        <div class="flex-row">
-            <div class="menu">
+        <div class="menu">
                 <?php include("menu.php");?>
-            </div>
-            <div class="content">
-                <input id="searchbar" type="text" name="search" placeholder="Recherche Comics">
-                <div id="container"></div>
-            </div>
         </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
-    <script src="../js/ApiComics.js"></script>  
+        <div class="content">
+            <div id="PageTitle">
+                <p>Rechercher un Comics</p>
+            </div>
+            <input id="searchbar" type="text" name="search" placeholder="Recherche Comics">
+            <div id="container"></div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+        <script src="../js/ApiComics.js"></script>  
     </body>
 </html>

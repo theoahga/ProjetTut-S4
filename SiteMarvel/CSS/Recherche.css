@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+#recherche{
+    margin-left: 250px;
+}
+
+.search_bar{
+    height: 64px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search_bar input{
+    margin-top: 30px;
+    margin-right: 15px;
+    width: 40%;
+    padding: 10px 15px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #707070;
+    color: #707070;
+}
+
+.search_bar button{
+    margin-top: 30px;
+    padding: 10px 15px;
+    background-color: transparent;
+    border: 2px solid #707070;
+    color: #707070;
+}
+
+.search_bar input::placeholder{
+    color: #707070;
+}
+
+.search_bar button:hover{
+    background-color: #707070;
+    color: #F6F5FF;
+    transition: 0.5s;
+}
+
+#result{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card {
+    width: 300px;
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 210px 150px 80px;
+    grid-template-areas: "image" "text" "stats";
+    border-radius: 18px;
+    background: #F6F5FF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 80%;
+    text-align: center;
+    margin-left: 25px;
+    transition: 0.5s;
+    transform: scale(0.8);
+}
+
+.card-image {
+    grid-area: image;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+
+.card-text {
+    grid-area: text;
+    margin: 15px;
+    color: #707070;
+    font-size:13px;
+}
+
+.card-stats {
+    grid-area: stats; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: #695CFE;
+}
+
+.card-stats .stat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #F6F5FF;
+    padding: 10px;
+    border-top: 1px solid #5346e6;
+}
+
+.card-stats .border {
+    border-left: 1px solid #5346e6;
+    border-right: 1px solid #5346e6;
+}
+
+.card:hover{
+    transform: scale(0.9);
+    transition: 0.5s;
+}
+
+.PrincipalTextDiv{
+    height: 64px;
+    line-height: 100px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.PrincipalText{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: #707070;
+    font-size: 24px;
+    text-decoration: underline #707070;
+}
+
+.numero{
+    padding: 10px 10px;
+    background-color: transparent;
+    border: 2px solid #707070;
+    color: #707070;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.numero:hover{
+    background-color: #707070;
+    color: #F6F5FF;
+    transition: 0.5s;
+}
+
+#switchpage{
+    height: 120px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.PageNumero{
+    color: #707070;
+}
+
+

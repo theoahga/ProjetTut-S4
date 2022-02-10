@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Andada+Pro&display=swap');
+
+#details{
+    margin-left: 250px;
+    overflow: hidden;
+}
+
+#coverImage img{
+    filter: brightness(80%);
+    opacity: 80%;
+}
+
+#posterImage img{
+    position: absolute;
+    top: 220px;
+    left: 600px;
+    width: 200px;
+    filter: drop-shadow(0 0 0.30rem #695CFE);
+}
+
+#titreAnime{
+    height: 50px;
+    width: 1000px;
+    position: absolute;
+    top: 320px;
+    left: 850px;
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    text-align: center;
+    line-height: 50px;
+    font-family: 'Andada Pro', serif;
+    font-size: 20px;
+}
+
+#titreAnime p{
+    text-shadow: 2px 0 0 #695CFE, -2px 0 0 #695CFE, 0 2px 0 #695CFE, 0 -2px 0 #695CFE, 1px 1px #695CFE, -1px -1px 0 #695CFE, 1px -1px 0 #695CFE, -1px 1px 0 #695CFE;
+    color: #F6F5FF;
+}
+
+#synopsis{
+    width: 600px;
+    margin-left: 600px;
+    margin-top: 10px;
+}
+
+#information{
+    position: absolute;
+    top: 420px;
+    left: 1500px;
+    width: 300px;
+    height: 500px;
+    background-color: #F6F5FF;
+    display: flex;
+    flex-direction: column;
+    filter: drop-shadow(0 0 0.10rem #695CFE);
+    border-radius: 5px;
+}
+
+.titreInfo{
+    text-align: center;
+    line-height: 50px;
+    font-family: 'Andada Pro', serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.titreInfo p{
+    text-align: center;
+    color: #707070;
+}
+
+#information ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+}
+
+#information li{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+}
+
+#information li>strong{
+    width: 100px;
+    max-width: 35%;
+}
+
+#information li>span {
+    margin-left: 20px;
+    width: 150px;
+    word-wrap : break-word;
+    display: inline-block;
+    align-items: center;
+    color: #707070;
+}

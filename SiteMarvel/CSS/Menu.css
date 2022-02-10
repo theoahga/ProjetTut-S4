@@ -1,12 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
 
-/*vert : 2ecc71*/
-
 body{
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    background-color: #191919;
+    background-color: #E4E9F7;
 }
 
 a{
@@ -25,7 +23,7 @@ ul{
 }
 
 .titre{
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 .page{
@@ -33,7 +31,7 @@ ul{
 }
 
 #titre{
-    color: #FFFFFF;
+    color: #707070;
     font-weight: 600;
     margin-left: 13px;
 }
@@ -46,11 +44,9 @@ ul{
     box-sizing: border-box;
     width: 250px;
     height: 100vh;
-    background-color: #12192C; /*12192C*/
-    color: #FFFFFF;
+    background-color: #F6F5FF;
     padding: 24px 32px;
     position: fixed;
-    border-right: solid #3498db;
 }
 
 .lien{
@@ -59,16 +55,20 @@ ul{
     align-items: center;
     column-gap: 12px;
     padding: 12px;
-    color: #FFFFFF;
+    color: #707070;
     border-radius: 10px;
     margin-bottom: 20px;
     
 }
 
 .lien:hover{
-    background-color: #3498db; /*0C5DF4*/
-    cursor: pointer;
-    transition: 0.5s;  
+    background-color: #695CFE;
+    cursor: pointer;  
+    color: #F6F5FF;
+}
+
+.lien:hover a{
+    color: #F6F5FF;
 }
 
 .conteneur{
@@ -85,14 +85,13 @@ ul{
 }
 
 .sous_lien{
-    color: #FFFFFF;
+    color: #707070;
     font-size: 14px;
 }
 
 .sous_lien:hover{
-    color: #B6CEFC;
+    text-decoration: underline #F6F5FF;
 }
-
 
 .affiche_menu{
     display: block;

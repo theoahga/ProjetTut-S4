@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    background-image:url("https://wallpaperaccess.com/full/815769.jpg");
+}
+
+.form_container {
+    width: 800px;
+    display: flex;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transform: scale(1.30);
+}
+
+.sign_in, .sign_up {
+    flex: 1;
+    backdrop-filter: blur(5px); 
+}
+
+.overlay_container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
+    background-image: linear-gradient(#7f74fc, #3b2ce6);
+    text-align: center;
+    transition: 0.5s ease-in-out;
+    color: #F6F5FF;
+}
+
+.overlay_container .overlay {
+    width: 200%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+}
+
+.left, .right {
+    flex: 1;
+    padding: 25px;
+    transition: 0.4s ease-in-out;
+}
+
+.overlay_container .overlay p {
+    line-height: 1.7;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.open_sign_in, .open_sign_up {
+    background-color: #F6F5FF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: #707070;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    outline: none;
+}
+
+.sign_in, .sign_up {
+    padding: 45px 40px;
+    display: grid;
+    align-items: center;
+}
+
+.form_container {
+    box-shadow: 0 2px 30px #0001, 0 2px 20px #0001, 0 0 1px #0001;
+}
+
+.form_title {
+    text-align: center;
+    margin: 20px 0 40px;
+    text-transform: uppercase;
+    text-shadow: 1px 0 0 #695CFE, -1px 0 0 #695CFE, 0 1px 0 #695CFE, 0 -1px 0 #695CFE, 1px 1px #695CFE, -1px -1px 0 #695CFE, 1px -1px 0 #695CFE, -1px 1px 0 #695CFE;
+    color: #F6F5FF;
+}
+
+.form_group {
+    margin-bottom: 20px;
+}
+
+.form_control {
+    display: block;
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid rgba(105, 92, 254, 0.6);
+    text-shadow: 1px 0 0 #695CFE, -1px 0 0 #695CFE, 0 1px 0 #695CFE, 0 -1px 0 #695CFE, 1px 1px #695CFE, -1px -1px 0 #695CFE, 1px -1px 0 #695CFE, -1px 1px 0 #695CFE;
+    color: #F6F5FF;
+    background-color: transparent;
+    font-size: 1rem;
+    transition: 0.3s ease-in-out;
+}
+
+.form_control::placeholder {
+    text-shadow: 1px 0 0 #695CFE, -1px 0 0 #695CFE, 0 1px 0 #695CFE, 0 -1px 0 #695CFE, 1px 1px #695CFE, -1px -1px 0 #695CFE, 1px -1px 0 #695CFE, -1px 1px 0 #695CFE;
+    color: #F6F5FF;
+}
+
+.form_control:hover, .form_control:focus {
+    background-color: transparent;
+    box-shadow: inset 2px 2px 6px rgba(105, 92, 254, 0.4), inset -2px -2px 6px #F6F5FF;
+}
+
+.submit_btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 12px 30px;
+    font-size: 16px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 50px;
+    background-image: linear-gradient(-45deg, #7f74fc, #3b2ce6);
+    color: #F6F5FF;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.submit_btn:hover, .open_sign_in:hover, .open_sign_up:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+
+.form_container.active .overlay_container {
+    transform: translateX(100%);
+}
+
+.form_container.active .overlay_container .overlay {
+    transform: translateX(-50%);
+}
+
+.form_container .overlay_container .overlay .right {
+    transform: translateX(40%);
+}
+
+.form_container.active .overlay_container .overlay .right {
+    transform: translateX(0%);
+}
+
+.form_container.active .overlay_container .overlay .left {
+    transform: translateX(-40%);
+}

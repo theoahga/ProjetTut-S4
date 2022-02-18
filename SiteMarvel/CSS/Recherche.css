@@ -46,6 +46,8 @@
 #result{
     display: flex;
     flex-wrap: wrap;
+    margin-left: 10%;
+
 }
 .card {
     width: 300px;
@@ -155,4 +157,63 @@
     color: #707070;
 }
 
+.carousel{
+   height: 500px;
+   width: 100%;
+   position: relative;
+}
 
+.carousel .switchLeft,
+.carousel .switchRight{
+    color: #707070;
+    font-weight: bold;
+    height: 100%;
+    width: 45px;
+    vertical-align: middle;
+    line-height: 250px;
+    font-size: 25px;
+    text-align: center;
+    z-index: 3;
+    top: 0;
+    font-family: sans-serif;
+
+}
+
+
+.carousel .switchLeft{
+    position:absolute;
+    top: 115px;
+    left: 0px;
+}
+
+.carousel .switchRight{
+    position: absolute;
+    top: 115px;
+    right: 0px;
+}
+
+#carouselbox{
+    height: 500px;
+    margin-left: 3%;
+    margin-right: auto;
+    max-width: 94%;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    text-align: center;
+    padding-bottom: 10px !important;
+    display: flex;
+    align-items: center;
+}
+#carouselbox a .card {
+    margin-left: 1px;
+}
+
+#carouselbox a .card {
+    margin-left: 1px;
+}
+
+
+#carouselbox a{
+    z-index: 2 ;
+}

@@ -23,9 +23,9 @@
                 <ion-icon name="chevron-down-outline" class="conteneur_icon"></ion-icon>
 
                 <ul class="conteneur_menu">
-                    <a href="#" class="sous_lien">Recherche</a>
-                    <a href="#" class="sous_lien">Catégorie</a>
-                    <a href="#" class="sous_lien">Top</a>
+                    <a href="RechercheAnime.php" class="sous_lien">Recherche</a>
+                    <a href="CategorieAnime.php" class="sous_lien">Catégorie</a>
+                    <a href="PopulaireAnime.php" class="sous_lien">Top</a>
                 </ul>
             </div>
             <div href="#" class="lien conteneur">

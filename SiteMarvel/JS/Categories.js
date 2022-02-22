@@ -8,6 +8,7 @@ InitCategory("https://kitsu.io/api/edge/anime?sort=popularityRank&filter[categor
 
 
 
+
 function InitCategory(url){
 
     fetch(url)
@@ -17,6 +18,7 @@ function InitCategory(url){
 
 function UpdateDOMCat(data){
     console.log(data);
+    
     carousel.innerHTML = "";
     data.data.forEach(function(anime,index){
         let ep;

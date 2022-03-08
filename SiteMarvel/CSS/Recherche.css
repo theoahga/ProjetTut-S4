@@ -192,7 +192,7 @@
     right: 0px;
 }
 
-#carouselbox{
+#carouselbox, #carouselbox1, #carouselbox2, #carouselbox3{
     height: 500px;
     margin-left: 3%;
     margin-right: auto;
@@ -205,16 +205,19 @@
     display: flex;
     align-items: center;
 }
-#carouselbox a .card {
+#carouselbox, #carouselbox1, #carouselbox2, #carouselbox3 a .card {
     margin-left: 1px;
 }
 
-#carouselbox a .card {
+#carouselbox, #carouselbox1, #carouselbox2, #carouselbox3 a .card {
     margin-left: 1px;
 }
 
 
-#carouselbox a{
+#carouselbox, #carouselbox1, #carouselbox2, #carouselbox3 a{
     z-index: 2 ;
 }
+
+
+
 

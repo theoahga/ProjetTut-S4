@@ -1,10 +1,10 @@
-const carousel = document.getElementById('carouselbox');
+const car2 = document.getElementById('carouselbox2');
 
-var scrollPerclick =0 ;
-var ImagePadding = 20;
-var scrollAmont = 0;
+var scrollPerclick2 =0 ;
+var ImagePadding2 = 20;
+var scrollAmont2 = 0;
 
-InitCategory("https://kitsu.io/api/edge/anime?sort=popularityRank&filter[categories]=adventure");
+InitCategory("https://kitsu.io/api/edge/anime?sort=popularityRank&filter[categories]=drama");
 
 
 
@@ -19,7 +19,6 @@ function InitCategory(url){
 function UpdateDOMCat(data){
     console.log(data);
     
-    carousel.innerHTML = "";
     data.data.forEach(function(anime,index){
         let ep;
         let eptxt;
@@ -31,7 +30,7 @@ function UpdateDOMCat(data){
             ep = anime.attributes.episodeCount;
             eptxt = "épisodes";
         }
-        carousel.innerHTML += 
+        car2.innerHTML += 
 
         `
         <a href="Detail.php?id=${anime.id}" class="img-${index}">
@@ -61,35 +60,35 @@ function UpdateDOMCat(data){
     });
 
 
-    scrollPerclick = 700;
+    scrollPerclick2 = 700;
 }
 
-function sliderScrollLeft(){
-    carousel.scrollTo({
+function sliderScrollLeft2(){
+    car2.scrollTo({
         top:0,
-        left: (scrollAmont -= scrollPerclick),
+        left: (scrollAmont2 -= scrollPerclick2),
         behavior : "smooth",
     });
 
-    if(scrollAmont<0){
-        scrollAmount = 0 
+    if(scrollAmont2<0){
+        scrollAmont2 = 0 
     }
 }
 
-function sliderScrollRight() {
-    if(scrollAmont <carousel.scrollWidth - carousel.clientWidth){
-        carousel.scrollTo({
+function sliderScrollRight2() {
+    if(scrollAmont2 <car2.scrollWidth - car2.clientWidth){
+        car2.scrollTo({
             top: 0,
-            left:(scrollAmont += scrollPerclick),
+            left:(scrollAmont2 += scrollPerclick2),
             behavior: "smooth",
         })
 
     }else{
-        carousel.scrollTo({
+        car2.scrollTo({
             top: 0,
-            left:-carousel.scrollWidth,
+            left:-car2.scrollWidth,
             behavior: "smooth",
         })
-        scrollAmont = 0;
+        scrollAmont2 = 0;
     }
 }

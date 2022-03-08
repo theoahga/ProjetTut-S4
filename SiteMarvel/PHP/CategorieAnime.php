@@ -18,34 +18,30 @@
             <a class="switchRight sliderButton" onclick="sliderScrollRight()">></a>
         </div>
         <div class="carousel">
-            <div id="carouselbox">
+            <div id="carouselbox1">
                 
             </div>
-            <a class="switchLeft sliderButton" onclick="sliderScrollLeft()"><</a>
-            <a class="switchRight sliderButton" onclick="sliderScrollRight()">></a>
+            <a class="switchLeft sliderButton" onclick="sliderScrollLeft1()"><</a>
+            <a class="switchRight sliderButton" onclick="sliderScrollRight1()">></a>
         </div>
         <div class="carousel">
-            <div id="carouselbox">
+            <div id="carouselbox2">
                 
             </div>
-            <a class="switchLeft sliderButton" onclick="sliderScrollLeft()"><</a>
-            <a class="switchRight sliderButton" onclick="sliderScrollRight()">></a>
+            <a class="switchLeft sliderButton" onclick="sliderScrollLeft2()"><</a>
+            <a class="switchRight sliderButton" onclick="sliderScrollRight2()">></a>
         </div>
         <div class="carousel">
-            <div id="carouselbox">
+            <div id="carouselbox3">
                 
             </div>
-            <a class="switchLeft sliderButton" onclick="sliderScrollLeft()"><</a>
-            <a class="switchRight sliderButton" onclick="sliderScrollRight()">></a>
-        </div>
-        <div class="carousel">
-            <div id="carouselbox">
-                
-            </div>
-            <a class="switchLeft sliderButton" onclick="sliderScrollLeft()"><</a>
-            <a class="switchRight sliderButton" onclick="sliderScrollRight()">></a>
+            <a class="switchLeft sliderButton" onclick="sliderScrollLeft3()"><</a>
+            <a class="switchRight sliderButton" onclick="sliderScrollRight3()">></a>
         </div>
     </div>
-    <script src="../js/Categories.js"></script>
+    <script src="../js/Categories/CatAdventure.js"></script>
+    <script src="../js/Categories/CatSuperPower.js"></script>
+    <script src="../js/Categories/CatDrama.js"></script>
+    <script src="../js/Categories/CatFriend.js"></script>
 </body>
 </html>

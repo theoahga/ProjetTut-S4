@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/Recherche.css">
-    <title>Categories Anime</title>
+    <title>Categories Manga</title>
 </head>
 <body>
     <?php include('Menu.php'); ?>
@@ -65,9 +65,9 @@
 
         
     </div>
-    <script src="../js/Categories/Anime/CatAdventure.js"></script>
-    <script src="../js/Categories/Anime/CatSuperPower.js"></script>
-    <script src="../js/Categories/Anime/CatDrama.js"></script>
-    <script src="../js/Categories/Anime/CatFriend.js"></script>
+    <script src="../js/Categories/Manga/CatAdventure.js"></script>
+    <script src="../js/Categories/Manga/CatSuperPower.js"></script>
+    <script src="../js/Categories/Manga/CatDrama.js"></script>
+    <script src="../js/Categories/Manga/CatFriend.js"></script>
 </body>
 </html>

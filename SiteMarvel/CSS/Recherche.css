@@ -219,5 +219,16 @@
 }
 
 
+#textCarousel
+{
+    padding-bottom: 2%;
+    padding-left: 5%;
+    margin-top: 10%;
+}
 
-
+#textCarousel p 
+{
+    font-size: 150px;
+    font-weight: bold;
+    color: red;
+}

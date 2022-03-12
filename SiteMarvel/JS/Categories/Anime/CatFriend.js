@@ -63,7 +63,7 @@ function UpdateDOMCat(data){
     scrollPerclick3 = 700;
 }
 
-function sliderScrollLeft2(){
+function sliderScrollLeft3(){
     car3.scrollTo({
         top:0,
         left: (scrollAmont2 -= scrollPerclick2),
@@ -75,7 +75,7 @@ function sliderScrollLeft2(){
     }
 }
 
-function sliderScrollRight2() {
+function sliderScrollRight3() {
     if(scrollAmont3 <car3.scrollWidth - car3.clientWidth){
         car3.scrollTo({
             top: 0,

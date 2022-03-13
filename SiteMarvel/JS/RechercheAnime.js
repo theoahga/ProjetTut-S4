@@ -1,3 +1,5 @@
+var tabId;
+
 function search(url){
 
     fetch(url)
@@ -71,6 +73,48 @@ function listPage(){
     `;
 }
 
+function UpdateDOMFav(data){
+    console.log(data);
+    const container = document.getElementById('result');
+    let ep;
+    let eptxt;
+    if(data.data.attributes.episodeCount == null){
+        ep = "en cours";
+        eptxt = "";
+    }
+    else{
+        ep = data.data.attributes.episodeCount;
+        eptxt = "épisodes";
+    }
+
+    container.innerHTML += 
+
+    `
+    <a href="Detail.php?id=${data.data.id}">
+    <div class="card">
+        <div class="card-image" style="background-image: url(${data.data.attributes.posterImage.small});"></div>
+        <div class="card-text">
+            <h2>${data.data.attributes.titles.en_jp}</h2>
+        </div>
+        <div class="card-stats">
+            <div class="stat">
+                <div class="value">${data.data.attributes.averageRating}/100</div>
+                <div class="type">note</div>
+            </div>
+            <div class="stat border">
+                <div class="value">${ep}</div>
+                <div class="type">${eptxt}</div>
+            </div>
+            <div class="stat">
+                <div class="value">${data.data.attributes.startDate}</div>
+                <div class="type">sortie</div>
+            </div>
+        </div>
+    </div>
+    </a>
+    `
+}
+
 if(document.title == "Recherche Anime"){
     const bar = document.getElementById('search_button');
     bar.addEventListener('click', () => {
@@ -85,6 +129,20 @@ else if(document.title == "Populaire Anime"){
     setTimeout(function(){
         listPage();
     }, 600);
+    
+}
+else if(document.title == "Favoris Anime"){
+    var tab = document.getElementById('tab').value;
+    tab = tab.substring(1);
+    tab = tab.slice(0, -1);
+    tabId = tab.split(",");
+    const container = document.getElementById('result');
+    container.innerHTML = "";
+    tabId.forEach(element => 
+        fetch(`https://kitsu.io/api/edge/anime/${element}`)
+        .then(res => res.json())
+        .then(UpdateDOMFav)
+    );
     
 }
 

@@ -12,6 +12,10 @@
         <div id="coverImage">
 
         </div>
+        <div class="buttons">
+            <span><a id="one" href="AjouteFavoris.php?identifiant=<?php echo $_GET['id'] ?>"></a></span>
+            <span><a id="two" href="RetirerFavoris.php?identifiant=<?php echo $_GET['id'] ?>"></a></span>
+        </div>
         <div id="posterImage">
 
         </div>

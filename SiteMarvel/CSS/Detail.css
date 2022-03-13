@@ -42,8 +42,9 @@
 
 #synopsis{
     width: 600px;
-    margin-left: 600px;
-    margin-top: 10px;
+    position: absolute;
+    top: 420px;
+    left: 850px;
 }
 
 #information{
@@ -99,4 +100,82 @@
     display: inline-block;
     align-items: center;
     color: #707070;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    width: 350px;    
+}
+
+.buttons span{
+    position: relative;
+    display: inline-flex;
+    width: 180px;
+    height: 55px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.buttons span a{
+    font-size: 19px;
+    letter-spacing: 1px;
+    transform-style: preserve-3d;
+    transform: translateZ(-25px);
+    transition: transform .25s;
+    font-family: 'Montserrat', sans-serif;
+}
+  
+span #one:before,
+span #one:after{
+    position: absolute;  
+    content: "Favoris";
+    height: 55px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid rgb(27, 136, 51);
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+span #two:before,
+span #two:after{
+    position: absolute;  
+    content: "Retirer";
+    height: 55px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid rgb(139, 9, 9);
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+span #one:before{
+    color: #fff;
+    background: rgb(65, 216, 98);
+    transform: rotateY(0deg) translateZ(25px);
+}
+  
+span #one:after{
+    color: rgb(27, 136, 51);
+    transform: rotateX(90deg) translateZ(25px);
+}
+
+span #two:before{
+    color: #fff;
+    background: rgb(216, 73, 54);
+    transform: rotateY(0deg) translateZ(25px);
+}
+  
+span #two:after{
+    color: rgb(139, 9, 9);
+    transform: rotateX(90deg) translateZ(25px);
+}
+  
+span a:hover{
+    transform: translateZ(-25px) rotateX(-90deg);
 }

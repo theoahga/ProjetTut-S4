@@ -1,4 +1,5 @@
 <?php
+    session_start();
     $num = 0;
     if(isset($_GET['num'])){
         $num = $_GET['num'];
@@ -31,3 +32,4 @@
     <script src="../js/RechercheManga.js"></script>
 </body>
 </html>
+

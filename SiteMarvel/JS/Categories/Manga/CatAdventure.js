@@ -33,7 +33,7 @@ function UpdateDOMCat(data){
         car.innerHTML += 
 
         `
-        <a href="Detail.php?id=${anime.id}" class="img-${index}">
+        <a href="DetailsManga.php?id=${anime.id}" class="img-${index}">
         <div class="card">
             <div class="card-image" style="background-image: url(${anime.attributes.posterImage.small});"></div>
             <div class="card-text">

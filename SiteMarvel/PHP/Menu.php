@@ -47,11 +47,11 @@
                 <ion-icon name="chevron-down-outline" class="conteneur_icon"></ion-icon>
 
                 <ul class="conteneur_menu">
-                    <a href="#" class="sous_lien">Anime</a>
-                    <a href="#" class="sous_lien">Manga</a>
+                    <a href="AnimeFavoris.php" class="sous_lien">Anime</a>
+                    <a href="MangasFavoris.php" class="sous_lien">Manga</a>
                 </ul>
             </div>
-            <a href="#" class="lien">
+            <a href="Formulaire.php" class="lien">
                 <i class='bx bx-log-out icon'></i>
                 <p class="page">Déconnexion</p>
             </a>

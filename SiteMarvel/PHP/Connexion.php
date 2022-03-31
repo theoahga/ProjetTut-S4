@@ -16,7 +16,7 @@ if(!empty($_POST['email']) && !empty($_POST['password'])){
     if($row > 0){
         if(password_verify($password, $data['password'])){
             $_SESSION['mail'] = $data['mail'];
-            header('Location: PopulaireAnime.php');
+            header('Location: Accueil.php');
             die();
         }
         else{

@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #E4E9F7;
+    max-height: 100vh;
+    overflow-y: hidden;
+}
+
+
+#accueil{
+    margin-left: 250px;
+}
+
+#accueil img{
+    width: 100%;
+    filter: brightness(80%);
+    opacity: 80%;
+    filter: blur(3px);
+    z-index: 2;
+}
+
+#txt{
+    height: 50px;
+    width: 1000px;
+    position: absolute;
+    top: 150px;
+    left: 600px;
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    text-align: center;
+    line-height: 50px;
+    font-family: 'Andada Pro', serif;
+    font-size: 20px;
+    z-index: 1;
+}
+
+#txt h1{
+    position: absolute;
+    left: 300px;
+    top: -20px;
+    font-family: 'Andada Pro', serif;
+    font-size: 28px;
+    text-shadow: 2px 0 0 #695CFE, -2px 0 0 #695CFE, 0 2px 0 #695CFE, 0 -2px 0 #695CFE, 1px 1px #695CFE, -1px -1px 0 #695CFE, 1px -1px 0 #695CFE, -1px 1px 0 #695CFE;
+    color: #F6F5FF;
+    z-index: 1;
+}
+
+#txt p{
+    position: absolute;
+    left: 125px;
+    top: 125px;
+    font-size: 24px;
+    text-shadow: 2px 0 0 #695CFE, -2px 0 0 #695CFE, 0 2px 0 #695CFE, 0 -2px 0 #695CFE, 1px 1px #695CFE, -1px -1px 0 #695CFE, 1px -1px 0 #695CFE, -1px 1px 0 #695CFE;
+    color: #F6F5FF;
+    z-index: 1;
+}
+
+.container{
+	margin:auto;
+    margin-left: 350px;
+}
+
+.ligne{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul{
+	list-style: none;
+}
+
+.footer{
+	background-color: #707070;
+    padding: 70px 0;
+    position: absolute;
+    bottom: 0px;
+    width: calc(100% - 250px);
+}
+
+.colonne{
+   width: 25%;
+   padding: 0 15px;
+}
+
+.colonne h4{
+	font-size: 18px;
+	color: #F6F5FF;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+.colonne h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #695CFE;
+	height: 2px;
+	box-sizing: border-box;
+	width: 120px;
+}
+
+.colonne ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+
+.colonne ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #F6F5FF;
+	text-decoration: none;
+	font-weight: 300;
+	color: #F6F5FF;
+	display: block;
+	transition: all 0.3s ease;
+}
+
+.colonne ul li a:hover{  
+	padding-left: 8px;
+}

@@ -12,7 +12,7 @@
             <div class="titre">
                 <a href="#" id="titre">MonSiteAnime</a>
             </div>
-            <a href="#" class="lien">
+            <a href="Accueil.php" class="lien">
                 <i class='bx bx-home icon' ></i>
                 <p class="page">Accueil</p>
             </a>
